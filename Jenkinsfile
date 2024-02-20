@@ -12,6 +12,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                pwd
+                ls -ltr
                 cd alphajenkins
                 pip install -r requirements.txt
                 '''
