@@ -22,8 +22,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python3 helloworld.py
-                python3 helloworld.py --name=Goat
+                python helloworld.py
+                python helloworld.py --name=Goat
                 '''
             }
         }
