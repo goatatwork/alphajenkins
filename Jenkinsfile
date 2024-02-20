@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                source .venv/bin/activate
                 pip install -r requirements.txt
                 '''
             }
