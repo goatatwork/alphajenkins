@@ -10,30 +10,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building.."
-                sh '''
-                python3 -m venv .venv
-                source .venv/bin/activate
-                pip install -r requirements.txt
-                '''
+                buildScript()
             }
         }
         stage('Test') {
             steps {
-                echo "Testing.."
-                sh '''
-                source .venv/bin/activate
-                python helloworld.py
-                python helloworld.py --name=Goat
-                '''
+                testScript()
             }
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
-                sh '''
-                echo "doing delivery stuff.."
-                '''
+                deliverScript()
             }
         }
     }
