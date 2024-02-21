@@ -11,21 +11,21 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    buildScript()
+                    load '.jenkins/alpha_pipeline/build.groovy'
                 }
             }
         }
         stage('Test') {
             steps {
                 script {
-                    testScript()
+                    load '.jenkins/alpha_pipeline/test.groovy'
                 }
             }
         }
         stage('Deliver') {
             steps {
                 script {
-                    deliverScript()
+                    load '.jenkins/alpha_pipeline/deliver.groovy'
                 }
             }
         }
