@@ -10,17 +10,23 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                buildScript()
+                script {
+                    buildScript()
+                }
             }
         }
         stage('Test') {
             steps {
-                testScript()
+                script {
+                    testScript()
+                }
             }
         }
         stage('Deliver') {
             steps {
-                deliverScript()
+                script {
+                    deliverScript()
+                }
             }
         }
     }
