@@ -1,4 +1,7 @@
-echo "Delivering.."
+def deliver() {
+    echo "Delivering.."
 
-// Create virtual environment
-execute sh: 'Doing delivery stuff, beep bop, boop'
+    sh '''
+    echo "Doing delivery stuff. Beep, boop, bop.
+    '''
+}
