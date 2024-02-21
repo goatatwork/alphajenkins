@@ -1,5 +1,5 @@
 println "Delivering.."
 
 sh '''
-echo "Doing delivery stuff. Beep, boop, bop.
+echo "Doing delivery stuff. Beep, boop, bop."
 '''
