@@ -1,10 +1,8 @@
-def testScript() {
-    println "Testing..."
+println "Testing..."
 
-    sh '''
-    echo "...testing"
-    source .venv/bin/activate
-    python helloworld.py
-    python helloworld.py --name=Goat
-    '''
-}
+sh '''
+echo "...testing"
+source .venv/bin/activate
+python helloworld.py
+python helloworld.py --name=Goat
+'''
