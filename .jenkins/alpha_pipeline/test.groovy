@@ -1,5 +1,9 @@
-class GroovyGoatTester {
-    static void main(String[] args) {
-        println("Is this thing on?");
-    }
+def test() {
+    println "Testing.."
+
+    sh '''
+    source .venv/bin/activate
+    python helloworld.py
+    python helloworld.py --name=Goat
+    '''
 }
