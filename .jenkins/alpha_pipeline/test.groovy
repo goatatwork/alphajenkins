@@ -1,6 +1,6 @@
 echo "Testing.."
-sh '''
-source .venv/bin/activate
-python helloworld.py
-python helloworld.py --name=Goat
-'''
+
+// Create virtual environment
+execute sh: 'source .venv/bin/activate'
+execute sh: 'python helloworld.py'
+execute sh: 'python helloworld.py --name=Goat'

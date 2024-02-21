@@ -1,4 +1,4 @@
-echo 'Deliver....'
-sh '''
-echo "doing delivery stuff.."
-'''
+echo "Delivering.."
+
+// Create virtual environment
+execute sh: 'Doing delivery stuff, beep bop, boop'
