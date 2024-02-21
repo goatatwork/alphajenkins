@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    build()
+                    buildScript()
                     // load '.jenkins/alpha_pipeline/build.groovy'
                 }
             }
@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    test()
+                    testScript()
                     // load '.jenkins/alpha_pipeline/test.groovy'
                 }
             }

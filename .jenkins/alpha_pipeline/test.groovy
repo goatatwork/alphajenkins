@@ -1,4 +1,4 @@
-def test() {
+def testScript() {
     println "Testing..."
 
     sh '''
