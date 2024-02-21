@@ -1,7 +1,5 @@
-def deliver() {
-    echo "Delivering.."
-
-    sh '''
-    echo "Doing delivery stuff. Beep, boop, bop.
-    '''
+class GroovyGoatDeliverer {
+    static void main(String[] args) {
+        println("Here you go, fucko");
+    }
 }
